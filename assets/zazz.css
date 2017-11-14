@@ -1,4 +1,17 @@
-html {
+/* html {
   display: grid;
   grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+} */
+
+.container {
+  display: grid;
+  /* width: 800px; */
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+  grid-gap: 1rem;
+}
+
+.container div {
+  border: 1px solid rgb(0, 95, 107);
+  border-radius: 3px;
 }
