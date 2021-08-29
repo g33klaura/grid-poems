@@ -1,17 +1,48 @@
-/* html {
-  display: grid;
-  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
-} */
-
-.container {
-  display: grid;
-  /* width: 800px; */
-  grid-template-columns: repeat(3, 150px);
-  grid-template-rows: repeat(3, 150px);
-  grid-gap: 1rem;
+body {
+  background-color: #212121;
+  color: #cecdbb;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
 }
 
-.container div {
-  border: 1px solid rgb(0, 95, 107);
-  border-radius: 3px;
+.layout {
+  display: flex;
+  margin: 60px 0 0 160px;
 }
+
+h1 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.grid {
+  margin-left: 180px;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 200px);
+  grid-gap: 2rem;
+  grid-template-areas:
+    "block1 block2 block3"
+    "block4 block5 block6"
+    "block7 block8 block9"
+}
+
+.grid .block,
+h1 {
+  /* border: 1px dotted rgb(0, 95, 107); */
+  margin: 0;
+  padding: 16px;
+  line-height: 2rem;
+  white-space: nowrap;
+}
+
+.block1 { grid-area: block1; }
+.block2 { grid-area: block2; }
+.block3 { grid-area: block3; }
+.block4 { grid-area: block4; }
+.block5 { grid-area: block5; }
+.block6 { grid-area: block6; }
+.block7 { grid-area: block7; }
+.block8 { grid-area: block8; }
+.block9 { grid-area: block9; }
